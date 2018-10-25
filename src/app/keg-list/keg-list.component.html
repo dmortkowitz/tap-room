@@ -1,0 +1,3 @@
+<li *ngFor="let keg of childKegList" [class]="pricesColor(keg)">
+  {{ keg.name }} Brand: {{ keg.brand }} Price: ${{ keg.price }} ABV: {{ keg.abv }}% <button (click)="editButtonClicked(keg)">Edit</button>
+</li>
